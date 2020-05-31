@@ -49,7 +49,7 @@ async function main () {
 			const rawmemberid = member[0].toNumber()
 			const memberprofile = await api.query.members.memberProfile(rawmemberid)
 			const handler = memberprofile.raw.handle.toJSON()
-			console.log('Notify post ',lastnotif+1, 'to Telegram')
+			console.log('Notify post',lastnotif+1, 'to Telegram')
 			//sent to array			
 			newpost.push(`🤩<b> New post (id:${lastnotif+1}) by ${handler} at:\r\n<a href="https://testnet.joystream.org/#/forum/threads/${currentthreadid}">"${threadtitle}"</a></b><i>\r\n"${excerpt}..."</i>\r\n`)
 			}
