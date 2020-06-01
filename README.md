@@ -17,13 +17,11 @@ Current demo is https://t.me/jsforumnotification
    cd jsforumnotif
    yarn install
    ```
-2. Replace `yourtoken` with your Telgram bot token. You can get it by talking to @botfather \
-   `const token = 'yourtoken';`\
+2. Replace `yourtoken` on `const token = 'yourtoken';` with your Telgram bot token. You can get it by talking to @botfather \
 You can edit fast using sed (change yourowntoken)\
 `sed -i -e 's/yourtoken/yourowntoken/g' index.js`
 
-3. Replace `yourchatid` with your group/channel the bot will notify into. [How to get chatid](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id)\
-    `const chatid = 'yourchatid';`\
+3. Replace `yourchatid` on `const chatid = 'yourchatid';` with your group/channel the bot will notify into. [How to get chatid](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id)\
 You can edit fast using sed (change yourownchatid)\
 `sed -i -e 's/yourchatid/yourownchatid/g' index.js`
 
